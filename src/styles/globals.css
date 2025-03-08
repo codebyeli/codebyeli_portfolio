@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #CD1338;
+  --secondary-color: #151515;
 }
 
 @theme inline {
@@ -20,7 +22,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #CD1338;
   color: var(--foreground);
   font-family: "Roboto Mono", monospace;
 }
@@ -31,6 +33,7 @@ nav{
 
 h1{
   font-family: "Lexend", sans-serif;
+  font-weight: 800;
 }
 
 
