@@ -5,7 +5,7 @@ interface HeaderComponentProps {
   export function HeaderComponent({ onNavigate }: HeaderComponentProps) {
     return (
       <>
-        <nav className="flex items-center w-screen px-6 py-3">
+        <nav className="flex items-center w-screen px-6 py-3 bg-[#CD1338]">
           <img alt="Logo" className="h-10 w-auto" />
           <ul className="flex-1 flex justify-center space-x-8 text-white">
           <li

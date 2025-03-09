@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export function PresentationComponent() {
   const [isRed, setIsRed] = useState(false);
-  const [showImages, setShowImages] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -12,16 +11,8 @@ export function PresentationComponent() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowImages(true);
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div className="bg-black text-white flex flex-col items-center justify-center w-screen h-screen">
+    <div className=" text-white flex flex-col items-center justify-center w-screen h-screen">
       <h1 className="text-4xl text-center">
         Hi, I&apos;m{" "}
         <strong
@@ -33,7 +24,7 @@ export function PresentationComponent() {
         </strong>
       </h1>
       
-      {showImages && (
+      {
         <div className="grid grid-cols-4 gap-4 mt-4 place-items-center">
           <img src="/mongodb-svgrepo-com.svg" alt="Mongo" className="h-21 w-auto" />
           <img src="/express-svgrepo-com.svg" alt="Expressjs" className="h-21 w-auto" />
@@ -45,7 +36,7 @@ export function PresentationComponent() {
           <img src="/css-3-svgrepo-com.svg" alt="CSS" className="h-21 w-auto" />
           <img src="/microsoft-sql-server-logo-svgrepo-com.svg" alt="SQL" className="h-21 w-auto" />
         </div>
-      )}
+      }
     </div>
   );
 }
