@@ -26,12 +26,12 @@ interface HeaderComponentProps {
             >
               About me
             </li>
-            <li
+{/*             <li
               className="cursor-pointer hover:text-black"
               onClick={() => onNavigate("contact")}
             >
               Get in touch!
-            </li>
+            </li> */}
           </ul>
         </nav>
       </>
